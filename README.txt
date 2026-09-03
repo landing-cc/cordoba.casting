@@ -1,11 +1,15 @@
-CÓRDOBA CASTING — LANDING V1
+CÓRDOBA CASTING — LANDING V2
 
-Abrir index.html en el navegador.
+Abrir index.html.
 
-Archivos:
-- index.html: estructura, SEO inicial y schema
-- styles.css: sistema visual responsive basado en el KV
-- script.js: menú móvil y animaciones
-- kv-reference.png: KV de marca provisto como referencia/imagen institucional
+Esta versión prioriza una navegación simple, un catálogo de cursos visible desde el primer scroll y una estructura de ficha de curso inspirada en el sitio actual de Córdoba Casting/Tiendup, adaptada al nuevo manual de marca.
 
-Esta V1 deja preparados enlaces internos como placeholders (#) para conectar luego cada página individual de curso, WhatsApp, Red de Actores, Red de Realizadores y Aula Virtual.
+Incluye:
+- Home con catálogo principal de cursos.
+- Página completa de Actuación Frente a Cámara Nivel 1 como modelo de ficha.
+- Archivos placeholder para el resto de los cursos, listos para reemplazar por contenido específico.
+- Responsive desktop/mobile.
+- Poppins como tipografía principal.
+- Paleta del Manual de Marca 2026.
+
+Nota: los botones de consulta aún son visuales. Falta conectar WhatsApp/formulario y reemplazar datos de cada ficha por fechas/precios definitivos.
