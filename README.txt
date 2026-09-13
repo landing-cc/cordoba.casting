@@ -1,15 +1,40 @@
-CÓRDOBA CASTING — LANDING V2
+CÓRDOBA CASTING · LANDING V4
 
-Abrir index.html.
-
-Esta versión prioriza una navegación simple, un catálogo de cursos visible desde el primer scroll y una estructura de ficha de curso inspirada en el sitio actual de Córdoba Casting/Tiendup, adaptada al nuevo manual de marca.
-
-Incluye:
-- Home con catálogo principal de cursos.
-- Página completa de Actuación Frente a Cámara Nivel 1 como modelo de ficha.
-- Archivos placeholder para el resto de los cursos, listos para reemplazar por contenido específico.
-- Responsive desktop/mobile.
+QUÉ CAMBIÓ
+- Rediseño completo basado en el Refresh de Key Visual nuevo.
+- Negro dominante + gradientes negro/morado y negro/rojo.
+- Amarillo reservado para acciones y detalles.
 - Poppins como tipografía principal.
-- Paleta del Manual de Marca 2026.
+- Concepto visual detrás de cámara: foco, REC, encuadres, iluminación y composición.
+- Cursos ocupan la mayor parte de la experiencia.
+- Testimonios reciben una sección protagonista.
+- Secciones separadas de Novedades, Servicios y Comunidad.
+- Aula Virtual funciona como portal externo.
 
-Nota: los botones de consulta aún son visuales. Falta conectar WhatsApp/formulario y reemplazar datos de cada ficha por fechas/precios definitivos.
+ADMINISTRACIÓN
+Abrí admin.html.
+El panel permite editar:
+- hero y textos generales
+- todos los cursos
+- testimonios
+- novedades
+- servicios
+- comunidad
+- enlaces generales
+
+La edición funciona inmediatamente en el mismo navegador con LocalStorage.
+Esto es ideal para previsualizar y administrar la versión estática sin tocar HTML.
+
+PARA PUBLICAR CAMBIOS PARA TODOS
+Como GitHub Pages es estático, LocalStorage NO modifica el sitio para otros visitantes.
+Se incluye supabase.sql para crear una tabla de contenido online. El paso siguiente es conectar admin.html y app.js a tu proyecto Supabase con Auth para que solo el administrador pueda guardar cambios globales.
+
+ARCHIVOS PRINCIPALES
+index.html       Landing
+course.html      Ficha reutilizable de curso
+admin.html       Panel administrador
+content.js       Contenido inicial
+app.js           Render del sitio
+admin.js         Editor de contenido
+styles.css       Diseño completo
+supabase.sql     Base para CMS online
