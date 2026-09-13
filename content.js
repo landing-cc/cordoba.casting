@@ -2,8 +2,8 @@ window.CC_DEFAULT_CONTENT = {
   site: {
     announcement: 'INSCRIPCIONES ABIERTAS · NUEVAS COMISIONES',
     heroEyebrow: 'CÓRDOBA · ACTUACIÓN Y LENGUAJE AUDIOVISUAL',
-    heroTitle: 'ENTRENÁ PARA\nESTAR FRENTE\nA CÁMARA.',
-    heroText: 'Formación práctica para actores, actrices y realizadores. Cursos con recorrido claro, acompañamiento y herramientas concretas para trabajar el lenguaje audiovisual.',
+    heroTitle: 'Formación para actuar frente a cámara.',
+    heroText: 'Cursos y entrenamientos para actores, actrices y realizadores, con práctica sostenida, acompañamiento y herramientas concretas para el lenguaje audiovisual.',
     heroPrimary: 'Ver cursos',
     heroSecondary: 'Ver experiencias',
     location: 'Rivadavia 150 · Córdoba Capital',
