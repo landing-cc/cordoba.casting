@@ -28,3 +28,11 @@ No usar nunca la service_role key en config.js.
 IMÁGENES
 Por ahora hay placeholders. Desde el admin se puede cambiar la ruta/URL de hero, cursos, testimonios, novedades, servicios y comunidad.
 Para cursos: 1600×1000 px.
+
+
+V7 - IMÁGENES DE CURSOS
+- Tarjetas de cursos: imagen 4:5, layout desktop 35% imagen / 65% información, object-fit: cover.
+- Tamaño recomendado: 1200×1500 px.
+- Admin: botón SUBIR IMAGEN en cada curso, conectado al bucket público website-images.
+- Antes de usar el botón, ejecutar storage-images.sql una sola vez en Supabase SQL Editor.
+- La imagen se sube primero; después tocar Publicar cambios para guardar su URL en site_content.
