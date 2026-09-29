@@ -1,40 +1,30 @@
-CÓRDOBA CASTING · LANDING V4
+CÓRDOBA CASTING · LANDING V6
 
-QUÉ CAMBIÓ
-- Rediseño completo basado en el Refresh de Key Visual nuevo.
-- Negro dominante + gradientes negro/morado y negro/rojo.
-- Amarillo reservado para acciones y detalles.
+DIRECCIÓN
+- Cursos primero.
+- Testimonios con presencia fuerte.
+- Novedades, Servicios y Comunidad después.
+- Aula Virtual es un link externo.
+- Refresh visual “Detrás de cámara”: encuadre, foco, luces, profundidad, negro + violeta/rojo y amarillo como detalle.
 - Poppins como tipografía principal.
-- Concepto visual detrás de cámara: foco, REC, encuadres, iluminación y composición.
-- Cursos ocupan la mayor parte de la experiencia.
-- Testimonios reciben una sección protagonista.
-- Secciones separadas de Novedades, Servicios y Comunidad.
-- Aula Virtual funciona como portal externo.
+- Fotografías de curso preparadas para 1600×1000 y mostradas sin recorte destructivo en desktop.
 
-ADMINISTRACIÓN
-Abrí admin.html.
-El panel permite editar:
-- hero y textos generales
-- todos los cursos
-- testimonios
-- novedades
-- servicios
-- comunidad
-- enlaces generales
+ADMIN PRIVADO
+El admin ya NO usa LocalStorage ni aparece enlazado en el footer público.
+1. Crear/usar un proyecto Supabase.
+2. Ejecutar supabase.sql.
+3. En Authentication > Users crear tu usuario.
+4. Copiar el UUID de ese usuario y ejecutar:
+   insert into public.site_admins(user_id) values ('TU-UUID');
+5. En config.js pegar Project URL y anon/public key.
+6. Subir el sitio.
+7. Entrar manualmente a /admin.html e iniciar sesión.
 
-La edición funciona inmediatamente en el mismo navegador con LocalStorage.
-Esto es ideal para previsualizar y administrar la versión estática sin tocar HTML.
+SEGURIDAD
+La seguridad no depende de ocultar admin.html: depende de Auth + RLS.
+La landing puede LEER el contenido. Solo UUIDs en site_admins pueden ESCRIBIR.
+No usar nunca la service_role key en config.js.
 
-PARA PUBLICAR CAMBIOS PARA TODOS
-Como GitHub Pages es estático, LocalStorage NO modifica el sitio para otros visitantes.
-Se incluye supabase.sql para crear una tabla de contenido online. El paso siguiente es conectar admin.html y app.js a tu proyecto Supabase con Auth para que solo el administrador pueda guardar cambios globales.
-
-ARCHIVOS PRINCIPALES
-index.html       Landing
-course.html      Ficha reutilizable de curso
-admin.html       Panel administrador
-content.js       Contenido inicial
-app.js           Render del sitio
-admin.js         Editor de contenido
-styles.css       Diseño completo
-supabase.sql     Base para CMS online
+IMÁGENES
+Por ahora hay placeholders. Desde el admin se puede cambiar la ruta/URL de hero, cursos, testimonios, novedades, servicios y comunidad.
+Para cursos: 1600×1000 px.
