@@ -7,3 +7,57 @@
 /* Admin image uploader */
 .image-field{grid-column:1/-1;border:1px solid #373739;background:#171718;padding:14px;border-radius:8px}.image-field>span{display:block;font-size:10px;font-weight:700;letter-spacing:.06em;color:#aaa;margin-bottom:8px}.image-field-row{display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center}.image-field input[type=text]{width:100%}.upload-btn{border:0;background:#f2d33c;color:#111;font:700 10px Poppins,sans-serif;padding:12px 14px;cursor:pointer;white-space:nowrap}.upload-btn:disabled{opacity:.55;cursor:wait}.image-preview{margin-top:12px;width:120px;aspect-ratio:4/5;object-fit:cover;background:#0d0d0e;border:1px solid #333;display:block}.upload-note{display:block;margin-top:8px;color:#777;font-size:9px}.upload-error{display:block;margin-top:8px;color:#ff8078;font-size:10px}
 @media(max-width:720px){.image-field-row{grid-template-columns:1fr}.upload-btn{width:100%}}
+
+/* Etiqueta de modalidad */
+.mode-tab{position:absolute;z-index:3;left:0;top:14px;padding:7px 12px 7px 10px;font-size:10px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;background:var(--yellow);color:#111;border-radius:0 4px 4px 0}
+.mode-tab::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:7px;background:#111}
+.mode-online{background:var(--purple);color:#fff}.mode-online::before{background:#fff;animation:ccpulse 1.6s infinite}
+.mode-hibrido{background:var(--red);color:#fff}.mode-hibrido::before{background:#fff}
+@keyframes ccpulse{50%{opacity:.25}}
+.course-hero-art{position:relative}
+/* Cómo empezar, FAQ, WhatsApp */
+.steps-section,.faq-section{padding:72px max(24px,calc((100vw - var(--max))/2));background:var(--paper);color:#111}
+.steps-section h2,.faq-section h2{font-size:clamp(26px,4vw,40px);margin:8px 0 28px}
+.steps{list-style:none;margin:0 0 32px;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.steps li{background:#fff;padding:24px;border-top:4px solid var(--yellow)}
+.steps b{display:inline-grid;place-items:center;width:34px;height:34px;background:#111;color:var(--yellow);border-radius:50%}
+.steps h3{margin:14px 0 6px}.steps p{margin:0;color:#555;font-size:14px;line-height:1.6}
+.faq-section{background:#fff}.faq-section details{border-bottom:1px solid #ddd8d2;padding:18px 0}
+.faq-section summary{cursor:pointer;font-weight:700}.faq-section details p{margin:10px 0 0;color:#555;line-height:1.6}
+.wa-float{position:fixed;right:18px;bottom:18px;z-index:50;background:#25D366;color:#073b1a;font-weight:800;font-size:13px;padding:14px 18px;border-radius:999px;box-shadow:0 8px 24px rgba(0,0,0,.35);text-decoration:none}
+@media(max-width:760px){.steps{grid-template-columns:1fr}}
+
+/* ===== V9 · Formato institucional (universidad privada) ===== */
+body{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+.header{position:sticky;top:0;z-index:60;backdrop-filter:blur(14px);background:rgba(13,13,14,.82);border-bottom:1px solid rgba(255,255,255,.08)}
+.nav a{letter-spacing:.06em;font-weight:600}
+.hero-stage{position:relative;overflow:hidden}
+.hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+.hero-video~.hero-photo{opacity:0}
+.hero-stage::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,13,14,.15),rgba(13,13,14,.55));pointer-events:none;z-index:1}
+.stage-light,.viewfinder,.hero-caption{z-index:2}
+.hero h1,.course-intro h2,.testimonial-heading h2,.section-title h2,.steps-section h2,.pillars-head h2,.faq-section h2,.portal-band h2,.contact h2{font-weight:700;letter-spacing:-.02em}
+.eyebrow{letter-spacing:.2em}
+.btn{border-radius:2px;letter-spacing:.08em;transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(0,0,0,.28)}
+.btn-outline{border:1.5px solid currentColor;background:transparent}
+.hero .btn-outline{color:#fff}
+.trust-bar{display:grid;grid-template-columns:repeat(4,1fr);background:var(--ink2);color:#fff;border-top:3px solid var(--yellow);padding:0 max(24px,calc((100vw - var(--max))/2))}
+.trust-bar div{padding:26px 20px;border-right:1px solid rgba(255,255,255,.1)}
+.trust-bar div:last-child{border-right:0}
+.trust-bar b{display:block;font-size:clamp(20px,2.6vw,30px);font-weight:700;color:var(--yellow);line-height:1.1}
+.trust-bar b i{font-style:normal;font-size:.5em;margin-left:6px;color:#fff}
+.trust-bar span{display:block;margin-top:6px;font-size:12px;color:var(--muted)}
+.course-card{transition:transform .25s,box-shadow .25s}
+.course-card:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(0,0,0,.18)}
+.pillars-section{background:var(--ink2);color:#fff;padding:84px max(24px,calc((100vw - var(--max))/2))}
+.pillars-head h2{font-size:clamp(28px,4vw,44px);margin:10px 0 40px;max-width:720px}
+.pillars{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid rgba(255,255,255,.15)}
+.pillars article{padding:28px 24px 8px 0;border-right:1px solid rgba(255,255,255,.1);margin-right:24px}
+.pillars article:last-child{border-right:0;margin-right:0}
+.pillars span{font-size:12px;font-weight:700;color:var(--yellow);letter-spacing:.14em}
+.pillars h3{margin:12px 0 8px;font-size:18px}.pillars p{margin:0;color:var(--muted);font-size:14px;line-height:1.7}
+.steps-section{border-top:1px solid #ddd8d2}
+@media(max-width:900px){.trust-bar,.pillars{grid-template-columns:1fr 1fr}.pillars article{border-right:0;margin-right:0}}
+@media(max-width:560px){.trust-bar,.pillars{grid-template-columns:1fr}.trust-bar div{border-right:0;border-bottom:1px solid rgba(255,255,255,.1)}}
+@media(prefers-reduced-motion:reduce){.hero-video{display:none}.hero-video~.hero-photo{opacity:1}*{transition:none!important}}
